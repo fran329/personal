@@ -1,12 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
     
-</body>
-</html>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    
+    <link href="https://fonts.googleapis.com/css2?family=Darumadrop+One&family=EB+Garamond&family=Fira+Sans&display=swap" rel="stylesheet">
+
+    <title>Institucion</title>
+    
+</head>
+
+<body>
+
+<!--header--> 
+
+  <div id="backgroundpic">
+    <header>
+
+    <nav id="navbar" class="navbar navbar-expand-lg">
+       
+     
+      
+  
+    <img src="https://lh3.googleusercontent.com/4oiTgdsOn1k_oGJrQ6szTIJTW7hxVsjY2-7k5QFcuFGeAf6YmnaycDOU_w3FA7iFvbCVBO_uIcqRYcVOTJYaQLIoEAZ8wE0pI1oQtFTuazJvzxEnKBob0t96nXlRf93BB-XrXnDC-g=s300-p-k" class="logo" alt="logo">
+
+    <a class="navbar-brand"   > <figcaption> comunicación</figcaption> <figcaption>integral</figcaption> </a> 
+
+    <button class="navbar-toggler"  type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> 
+
+    <span class="navbar-toggler-icon"></span>
+
+    </button>
+
+    <div class="collapse navbar-collapse ml-auto" id="navbarNav">
+        
+        <ul class="navbar-nav mc-auto   ">
+
+            
+          <li class="nav-item">
+
+            <a href="conctact.html">
+            
+                <button class="btn btn-custom contact  " id="contact">contacto</button>
+                     
+                          </a>
+                            
+                          </li>
+                     
+                          <li class="nav-item">
+              
+                              <button class="btn btn-custom ">servicios</button>
+              
+                          </li>
+              
+                          <li class="nav-item">
+              
+                              <button class="btn btn-custom ">sobre nosotros</button>
+              
+                              </button>
+              
+              
+                          </li>
+                          <li class="nav-item">
+              
+                  <button class="btn btn-custom ">meet us</button>
+              
+              </li>
+                          
+                      </ul>
+              
+                  </div>
+              
+              </nav>
+    </header>
+
+    <!--form-->
+
+<section>
+<ul>
+    
+
+<main>
+    <div class="container" >
+
+<div class="row">
+
+    <div class=" col-sm-6">
+        
+        <form action="./php/formulario.php" method="POST">
+
+            <ul>
+
+            <li> 
+
+           <label for="nombre">  Nombre  </label>
+
+<input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
+
+            </li>
+
+<li>
+
+<label for="apellido"> Apellido </label>
+
+<input type="text" id="apellido"  name="apellido" placeholder="Ingrese su apellido" required>
+
+</li>
+
+<li>
+
+<label for="email"> Email </label>
+
+<input type="text" id="email" name="email" placeholder="Ingrese su email" required>
+    
+</li>
+
+<li>
+
+<label for ="message"> Mensaje </label>
+
+<textarea id="message" name="message" rows="5" placeholder="Ingresa un comentario o pregunta" required></textarea>
+
+</li>
+
+<li>
+
+<input type="submit" value="Enviar">
+
+</li>    
+
+</form>
+
+    </div>
+
+</div>
+
+    </div>          
+
+</main>
+
+</section>

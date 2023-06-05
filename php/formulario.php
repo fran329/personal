@@ -1,37 +1,30 @@
 <?php
 $servername = "formularioPhp";
-$username = "fran"
+$username = "fran";
 $password = "1997";
 $dbname = "formulario";
 
-//Verificar conexiòn
-
-$conn = mysqli("$34.28.4.124", $fran, $1997, $googlecloudformulary);
-
-if ($conn connect_error) {
-    die("error de conexion: " . $conn)
+// Verificar conexión
+$conn = new mysqli($servername, $username, $password, $dbname);
+if ($conn->connect_error) {
+    die("Error de conexión: " . $conn->connect_error);
 }
 
-//formulario
+// Obtener datos del formulario
+$nombre = $_POST['nombre'];
+$apellido = $_POST['apellido'];
+$email = $_POST['email'];
 
-$nombre = $_POST ['Nombre'];
-$mail = $_POST ['Mail'];
-$organizacion = $_POST ['Organizaciòn']
-$localidad = $_POST ['Localidad']
+// Consulta SQL
+$sql = "INSERT INTO formulario (nombre, apellido, email) VALUES ('$nombre', '$apellido', '$email')";
 
-//consulta SQL
-
-$sql = "INSERT INTO formulario (Nombre, Mail, Organizaciòn) VALUES ( '$nombre', '$mail', '$organizacion', '$localidad')";
-
-//ejecutar consola
-
-if ($conn->query($sql) === TRUE ) {
-    echo "datos guardados.";
-}
-else {
-    "error al guardar los datos:" . $conn->error;
+// Ejecutar consulta
+if ($conn->query($sql) === TRUE) {
+    echo "Datos guardados.";
+} else {
+    echo "Error al guardar los datos: " . $conn->error;
 }
 
-//cerrar conexion
-
+// Cerrar conexión
 $conn->close();
+?>
