@@ -18,7 +18,7 @@ $message = $_POST['message'];
 
 
 // Consulta SQL
-$sql = "INSERT INTO formulario (nombre, apellido, email) VALUES ('$nombre', '$apellido', '$email')";
+$sql = "INSERT INTO formulario  (nombre, apellido, email) VALUES ('$nombre', '$apellido', '$email')";
 
 // Ejecutar consulta
 if ($conn->query($sql) === TRUE) {
