@@ -1,10 +1,10 @@
 <?php
-$servername = "formularioPhp";
+$servername = "34.28.4.124";
 $username = "fran";
-$password = "1997";
+$password = "lain";
 $dbname = "formulario";
 
-// Verificar conexión
+// Verificar conexºxión
 $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Error de conexión: " . $conn->connect_error);
@@ -14,6 +14,8 @@ if ($conn->connect_error) {
 $nombre = $_POST['nombre'];
 $apellido = $_POST['apellido'];
 $email = $_POST['email'];
+$message = $_POST['message'];
+
 
 // Consulta SQL
 $sql = "INSERT INTO formulario (nombre, apellido, email) VALUES ('$nombre', '$apellido', '$email')";
